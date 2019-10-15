@@ -96,7 +96,7 @@ services:
       - ./config/collector:/etc/collector:z
       - ./storage/chnserver/sqlite:/opt/sqlite:z
       - ./chnserver.sysconfig:/etc/default/chnserver:z
-      - ./certs:/tls:z
+      - ./certs:/etc/letsencrypt:z
     links:
       - mongodb:mongodb
       - redis:redis
